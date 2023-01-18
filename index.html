@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Fuzz Mart</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/ico" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./images/banner.png" />
+  </head>
+
+  <body>
+    <div class="header" data-header>
+      <div class="container-fluid">
+        <div id="burger" class="row">
+          <div class="col-lg-12 text-center d-lg-none ms-3">
+            <nav
+              class="nav nav-item"
+              type="img"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+            >
+              <img
+                src="https://assets.stickpng.com/images/588a64e7d06f6719692a2d11.png"
+                style="width: 20px"
+              />
+            </nav>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+            >
+              <div class="offcanvas-header mb-5 text-center">
+                <h1></h1>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </div>
+              <div class="offcanvas-body mt-5">
+                <a
+                  ><img
+                    src="images/logo-fuzz.png"
+                    width="150px "
+                    class="mx-auto d-block"
+                /></a>
+                <h1 class="navbar-item py-3">
+                  <a href="index.html">Home</a>
+                </h1>
+
+                <h1 class="navbar-item py-3" data-bs-dismiss="offcanvas">
+                  <a href="#category">Categories</a>
+                </h1>
+                <h1 class="navbar-item py-3" data-bs-dismiss="offcanvas">
+                  <a href="index.html#blog">Blogs</a>
+                </h1>
+
+                <h1 class="navbar-item py-3">
+                  <a href="shop.html">Shop</a>
+                </h1>
+
+                <h1 class="navbar-item py-3">
+                  <a href="contact-us.html">Contact Us</a>
+                </h1>
+                <div class="py-5">
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-lg btn-block"
+                  >
+                    <a href="login.html"> Log In </a>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-lg btn-block"
+                  >
+                    <a href="sign-up.html"> Sign Up </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html" class="logo">Fuzz Mart</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#category" class="navbar-link" data-nav-link
+                >Categories</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="index.html#blog" class="navbar-link" data-nav-link
+                >Blogs</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="shop.html" class="navbar-link" data-nav-link>Shop</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="contact-us.html" class="navbar-link" data-nav-link
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="action-btn" aria-label="Search">
+            <div class="col-lg-12 d-none d-lg-block">
+              <img
+                src="https://www.seekpng.com/png/full/920-9209972_magnifying-glass-png-white-search-icon-white-png.png"
+                style="width: 20px"
+                class=""
+              />
+            </div>
+            <div class="col-lg-12 text-center d-block d-lg-none">
+              <img
+                src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png"
+                style="width: 20px"
+              />
+            </div>
+          </button>
+
+          <button class="action-btn user" aria-label="User">
+            <div class="col-lg-12 d-none d-lg-block">
+              <a href="sign-up.html">
+                <img
+                  src="https://www.seekpng.com/png/full/30-301037_white-person-icon-png-download-man-icon-png.png"
+                  style="width: 20px"
+                />
+              </a>
+            </div>
+          </button>
+
+          <button class="action-btn" aria-label="cart">
+            <div class="col-lg-12 d-none d-lg-block">
+              <a href="cart.html"
+                ><img
+                  src="https://www.pngkey.com/png/full/307-3071593_accessories-shopping-cart-icon-white.png"
+                  style="width: 20px"
+                  href="cart.html"
+              /></a>
+            </div>
+            <div class="col-lg-12 text-center d-block d-lg-none">
+              <a href="cart.html"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25619.png"
+                  style="width: 20px"
+              /></a>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="section banner has-bg-image"
+      id="home"
+      aria-label="home"
+      style="background-image: url('./images/banner.png')"
+    >
+      <div class="container">
+        <h1 class="h1 banner-title">
+          <span class="span">High Quality</span> Pet Essentials
+        </h1>
+
+        <p class="banner-text">Sale up to 50% off on selected items</p>
+
+        <a href="shop.html" class="btn">Shop Now!</a>
+      </div>
+    </section>
+
+    <section class="section category" aria-label="category" id="category">
+      <div class="container">
+        <h2 class="h2 section-title"><span class="span">Shop</span> by Pet</h2>
+
+        <ul class="has-scrollbar">
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-1.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Cat Food"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Cat</a>
+              </h3>
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-2.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Cat Toys"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Dog</a>
+              </h3>
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-3.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Dog Food"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Guinea Pig</a>
+              </h3>
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-4.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Dog Food"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Hamster</a>
+              </h3>
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-5.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Dog Sumpplements"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Others</a>
+              </h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section category" aria-label="category" id="category">
+      <div class="container">
+        <h2 class="h2 section-title">
+          <span class="span">Shop</span> by Needs
+        </h2>
+
+        <ul class="has-scrollbar">
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-6.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Cat Food"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Food and Pellets</a>
+              </h3>
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-7.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Cat Toys"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Emergency Care</a>
+              </h3>
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-8.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Dog Food"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Pet Treats</a>
+              </h3>
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-9.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Dog Food"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Grooming</a>
+              </h3>
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="category-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 330; --height: 300"
+              >
+                <img
+                  src="./images/category-10.png"
+                  width="330"
+                  height="300"
+                  loading="lazy"
+                  alt="Dog Sumpplements"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Toys </a>
+              </h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section product" id="shop" aria-label="product">
+      <div class="container">
+        <h2 class="h2 section-title">
+          <span class="span">Trending</span> Items
+        </h2>
+
+        <ul class="grid-list">
+          <li>
+            <div class="product-card">
+              <div
+                class="card-banner img-holder"
+                style="--width: 360; --height: 360"
+              >
+                <img
+                  src="./images/product-1.jpg"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  alt="Commodo leo sed porta"
+                  class="img-cover default"
+                />
+                <img
+                  src="./images/product-1_0.jpg"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  alt="Commodo leo sed porta"
+                  class="img-cover hover"
+                />
+              </div>
+
+              <div class="card-content">
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Royal Canin Hypoallergenic Dog Dry Food (7kg)
+                  </a>
+                </h3>
+
+                <data class="card-price" value="575">₱575.00</data>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="product-card">
+              <div
+                class="card-banner img-holder"
+                style="--width: 360; --height: 360"
+              >
+                <img
+                  src="./images/product-2.jpg"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  alt="Purus consequat congue sit"
+                  class="img-cover default"
+                />
+                <img
+                  src="./images/product-2_0.jpg"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  alt="Purus consequat congue sit"
+                  class="img-cover hover"
+                />
+              </div>
+
+              <div class="card-content">
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Aqueon Shrimp Pellets Fish Food (6.5 oz)</a
+                  >
+                </h3>
+
+                <data class="card-price" value="440">₱440.00</data>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="product-card">
+              <div
+                class="card-banner img-holder"
+                style="--width: 360; --height: 360"
+              >
+                <img
+                  src="./images/product-3.jpg"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  alt="Morbi vel arcu scelerisque"
+                  class="img-cover default"
+                />
+                <img
+                  src="./images/product-3_0.jpg"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  alt="Morbi vel arcu scelerisque"
+                  class="img-cover hover"
+                />
+              </div>
+
+              <div class="card-content">
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Wardley Shrimp Pellet Fish Food (9.0 oz)</a
+                  >
+                </h3>
+
+                <data class="card-price" value="1,445">₱1,445.00</data>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="product-card">
+              <div
+                class="card-banner img-holder"
+                style="--width: 360; --height: 360"
+              >
+                <img
+                  src="./images/product-4.jpg"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  alt="Morbi vel arcu scelerisque"
+                  class="img-cover default"
+                />
+                <img
+                  src="./images/product-4_0.jpg"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  alt="Morbi vel arcu scelerisque"
+                  class="img-cover hover"
+                />
+              </div>
+
+              <div class="card-content">
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >ZuPreem FruitBlend Flavor with Natual Flavors (2 lb)</a
+                  >
+                </h3>
+
+                <data class="card-price" value="949">₱949.00</data>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section offer" aria-label="offer">
+      <h2 class="h2 section-title">
+        <span class="span">Popular</span> Services
+      </h2>
+      <div class="container">
+        <ul class="grid-list">
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/service-banner-1.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">Feeling Cute.</p>
+
+              <h3 class="h3 card-title">
+                Grooming <span class="span">Salon</span>
+              </h3>
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal7"
+                >
+                  More Details
+                </button>
+              </div>
+              <div class="modal fade" id="myModal7">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Grooming Salon</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong>
+                            The grooming destination that puts your pet's health
+                            first.
+                          </strong>
+                        </li>
+                        <br />
+                        <li class="text-center">
+                          <img
+                            src="images/service-1.webp"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="200px"
+                          />
+                          <br />
+                          Customize your dog’s grooming with solutions to help
+                          keep them feeling great.
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Breed-specific Haircuts</strong><br />
+                          Regular grooming is essential to your pet's health as
+                          it helps prevent skin issues such as matting.
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Baths for Every Breed</strong><br />
+                          We’ll suds away dirt, oil and debris to help skin &
+                          coats of all types look and feel great.
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Customized Packages</strong><br />
+                          Upgrade their visit with packages designed to target
+                          specific needs such as de-shedding, dry and sensitive
+                          skin care and more.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/service-banner-2.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">Health and Wellness.</p>
+
+              <h3 class="h3 card-title">
+                Veterinary <span class="span">Services</span>
+              </h3>
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal8"
+                >
+                  More Details
+                </button>
+              </div>
+              <div class="modal fade" id="myModal8">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Veterinary Services</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong> Quality Care for every needs </strong>
+                        </li>
+                        <br />
+                        <li class="text-center">
+                          <img
+                            src="images/service-2.webp"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="200px"
+                          />
+                          <br />
+                          State-of-the-art vet hospitals have the latest
+                          technology to provide your pet with the best care.
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Wellness and Sick Exams</strong><br />
+                          Our vets examine your pet from nose to tail—evaluating
+                          their overall health and recommending preventive care,
+                          diagnostics and treatments.
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Vaccinations</strong><br />
+                          Vaccinations are recommended for all dogs, cats and
+                          ferrets to help protect your pet from deadly
+                          infectious diseases.
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Spaying and Neutering</strong><br />
+                          Consult with our vets when your pet is young to
+                          schedule a spay or neuter to help prevent
+                          overpopulation.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/service-banner-3.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">Champion Breed.</p>
+
+              <h3 class="h3 card-title">
+                Dog <span class="span">Training</span>
+              </h3>
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal9"
+                >
+                  More Details
+                </button>
+              </div>
+              <div class="modal fade" id="myModal9">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Dog Training</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong>
+                            Group classes? Private lessons? We've got you
+                            covered.
+                          </strong>
+                        </li>
+                        <br />
+                        <li class="text-center">
+                          <img
+                            src="images/service-3.webp"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="200px"
+                          />
+                          <br />
+                          Our classes are designed for all ages and breeds,
+                          allowing you to customize a curriculum led by our
+                          certified trainers and AKC evaluators.
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Social Health</strong><br />
+                          Enjoy more positive interactions between you and your
+                          pet to help build trust and create a stronger bond for
+                          a lifetime of love.
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Physical Health</strong><br />
+                          Give them the confidence and exercise they need to
+                          explore new environments, dogs and people
+                        </li>
+                        <br />
+                        <li>
+                          <strong>Mental Health</strong><br />
+                          Engage and stimulate your pet’s mind through skills
+                          and activities to cater to their well-being
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section offer" aria-label="offer" id="blog">
+      <h2 class="h2 section-title">
+        <span class="span">Fur Parent</span> Blogs
+      </h2>
+      <div class="container">
+        <ul class="grid-list">
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/blog-banner-1.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">Offers on Selected Items.</p>
+
+              <h3 class="h3 card-title">
+                Hot Summer <span class="span">Deals</span>
+              </h3>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Hot Summer Deals</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong>
+                            Beat the heat this summer with the portable paw
+                            pool!
+                          </strong>
+                        </li>
+                        <br />
+                        <li>
+                          <img
+                            src="images/blog-1.webp"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="150px"
+                          />
+                        </li>
+                        <br />
+                        <li>
+                          Do your pets love being outside? We want to make those
+                          hot summer days more enjoyable for your for your fur
+                          kids!
+                          <strong
+                            >Portable Paw Pool is made for dogs and is built to
+                            last.</strong
+                          >
+                        </li>
+                        <br />
+                        <li>
+                          Have peace of mind knowing that the pool won't leak or
+                          tear, while you watch your fur kids run, jump and swim
+                          around their new play area. The pool is deep enough
+                          for your dog to get completely soaked and cool off by
+                          either sitting, standing or swimming.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/blog-banner-2.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">Treats & Nutrition.</p>
+
+              <h3 class="h3 card-title">
+                Boost every <span class="span">meal</span>
+              </h3>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal2"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="modal fade" id="myModal2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Treats & Nutrition</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong> Dog Food for Picky Eaters </strong>
+                        </li>
+                        <br />
+                        <li>
+                          <img
+                            src="images/blog-2.avif"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="200px"
+                          />
+                        </li>
+                        <br />
+                        <li>
+                          Every dog owner wants their furry friend to eagerly
+                          run to and finish their bowl at mealtime. If that’s
+                          not the case for your dog, you’re likely on the hunt
+                          for a food to encourage a healthier appetite.
+                        </li>
+
+                        <br />
+                        <li>
+                          <strong>
+                            Some dogs may self-regulate their food
+                            intake,</strong
+                          >
+                          refusing food or decreasing the amount they eat to
+                          prevent overeating and digestive discomfort.
+                          <strong>Others might simply be less hungry</strong>
+                          because of the number of treats and scraps they
+                          receive between meals.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/blog-banner-3.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">Show your love.</p>
+
+              <h3 class="h3 card-title">
+                New items <span class="span">this season</span>
+              </h3>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal3"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="modal fade" id="myModal3">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Show your love</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong>
+                            Paw-some gifts to buy for pets, fur parents this
+                            Christmas! (Puzzle Feeder from Bark n’ Bite)
+                          </strong>
+                        </li>
+                        <br />
+                        <li>
+                          <img
+                            src="images/blog-3.webp"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="150px"
+                          />
+                        </li>
+                        <br />
+                        <li>
+                          Want to make feeding time more fun?
+                          <strong
+                            >One way you can challenge your pet’s IQ and problem
+                            solving skills is by giving them a puzzle feeder
+                            this Christmas.</strong
+                          >
+                        </li>
+                        <br />
+                        <li>
+                          Described as a mental enrichment training toy it’s a
+                          handy tool for both giving your pet a fun brain
+                          exercise and curbing their eating time, especially if
+                          your pet is a fast eater.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/blog-banner-4.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">The Winter Shop.</p>
+
+              <h3 class="h3 card-title">
+                Essentials <span class="span">for the season</span>
+              </h3>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal4"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="modal fade" id="myModal4">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">The Winter Shop</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong> Winter Tips for Fur Parents! </strong>
+                        </li>
+                        <br />
+                        <li>
+                          <img
+                            src="images/blog-4.webp"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="200px"
+                          />
+                        </li>
+                        <br />
+                        <li>
+                          The holidays are almost here and it means winter is
+                          coming! This is one of the times in the year where
+                          your furbaby will be needing extra care and protection
+                          for them to be safe.
+                        </li>
+                        <br />
+                        <li>
+                          <strong
+                            >Provide your dog with elevated bedding and a snug
+                            blanket, like Pawtect Blankets</strong
+                          >. These blankets are waterproof and are specifically
+                          designed with faux fur fabric and proprietary Sherpup
+                          multi-layer material that allows no moisture to leak
+                          through either side.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/blog-banner-5.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">Happy Birthday!</p>
+
+              <h3 class="h3 card-title">
+                Celebrate a <span class="span">happy birthday</span>
+              </h3>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal5"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="modal fade" id="myModal5">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Happy Birthday!</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong> Dogs, Party too! </strong>
+                        </li>
+                        <br />
+                        <li>
+                          <img
+                            src="images/blog-5.jpg"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="200px"
+                          />
+                        </li>
+                        <br />
+                        <li>
+                          Remember to split your guest list into hoo-mans and
+                          furbabies. This is very important to help ensure
+                          everyone gets enough paw-sonel space.
+                        </li>
+                        <br />
+                        <li>
+                          It can be nice to make your own because regular human
+                          birthday cakes but they are are a huge no-no for your
+                          furbaby. However, if you’re baking, a pup-cake tower
+                          for all your furbaby guests is an excellent
+                          idea.<strong>
+                            Small little pupcakes can be just nice to minimise
+                            the chances of an upset tummy.</strong
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="offer-card has-bg-image img-holder"
+              style="
+                background-image: url('./images/blog-banner-6.png');
+                --width: 540;
+                --height: 374;
+              "
+            >
+              <p class="card-subtitle">Grooming Tips & Tricks.</p>
+
+              <h3 class="h3 card-title">
+                Spoil your<span class="span">best buddy</span>
+              </h3>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-block text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal6"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="modal fade" id="myModal6">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Grooming Tips and Tricks</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="text-start">
+                        <li class="text-center">
+                          <strong>
+                            At-Home Pet Grooming Tips For Fur Parents!
+                          </strong>
+                        </li>
+                        <br />
+                        <li>
+                          <img
+                            src="images/blog-6.jpg"
+                            class="img-responsive center-block d-block mx-auto"
+                            width="200px"
+                          />
+                        </li>
+                        <br />
+                        <li>
+                          There are many ways to keep your pet’s fur shiny and
+                          healthy. Our most important tip when choosing a
+                          shampoo is to veer away from those with strong scents.
+                          <strong>
+                            Remember that most furry friends have a strong sense
+                            of smell.</strong
+                          >
+                        </li>
+                        <br />
+                        <li>
+                          However always remember that you’re not actually a
+                          groomer. So even if you want to go all out on grooming
+                          your pets during this quarantine period, always know
+                          your limits. It’s always best to speak with your
+                          veterinarian and trusted groomer before doing
+                          anything.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section service" aria-label="service">
+      <div class="container">
+        <img
+          src="./images/logo-fuzz.png"
+          width="200px"
+          loading="lazy"
+          alt=""
+          class="img"
+        />
+
+        <h2 class="h2 section-title">
+          <span class="span">Happiness and Satisfaction </span> <br />
+          under one roof for your little friends.
+        </h2>
+
+        <ul class="grid-list">
+          <li>
+            <div class="service-card">
+              <figure class="card-icon">
+                <img
+                  src="./images/service-icon-1.png"
+                  width="70"
+                  height="70"
+                  loading="lazy"
+                  alt="service icon"
+                />
+              </figure>
+
+              <h3 class="h3 card-title">Free Delivery</h3>
+
+              <p class="card-text">
+                Order by 1 pm local time on the same-day to get free delivery on
+                orders ₱ 1,000+ today
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <figure class="card-icon">
+                <img
+                  src="./images/service-icon-2.png"
+                  width="70"
+                  height="70"
+                  loading="lazy"
+                  alt="service icon"
+                />
+              </figure>
+
+              <h3 class="h3 card-title">35% Off</h3>
+
+              <p class="card-text">35% off your first repeat delivery order</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <figure class="card-icon">
+                <img
+                  src="./images/service-icon-3.png"
+                  width="70"
+                  height="70"
+                  loading="lazy"
+                  alt="service icon"
+                />
+              </figure>
+
+              <h3 class="h3 card-title">Security payment</h3>
+
+              <p class="card-text">20% off your online order of ₱ 2,000+</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <figure class="card-icon">
+                <img
+                  src="./images/service-icon-4.png"
+                  width="70"
+                  height="70"
+                  loading="lazy"
+                  alt="service icon"
+                />
+              </figure>
+
+              <h3 class="h3 card-title">24/7 Support</h3>
+
+              <p class="card-text">
+                Our customer service agent will cater your need at any time of
+                the day
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section
+      class="cat has-bg-image"
+      aria-label="cat"
+      style="background-image: url('./images/ads-bg.png')"
+    >
+      <div class="container">
+        <figure class="cat-banner">
+          <img
+            src="./images/ads-banner.png"
+            class="img-fluid"
+            loading="lazy"
+            alt="cat"
+          />
+        </figure>
+
+        <div class="cat-content">
+          <h2 class="h2 section-title">
+            Healthy pets are what we pledge to bring you.
+          </h2>
+
+          <p class="section-text fs-3">
+            Why not give the best to the ones you love the most?
+          </p>
+
+          <a href="shop.html" class="btn">Shop Now!</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section brand" aria-label="brand">
+      <div class="container">
+        <h2 class="h2 section-title">
+          <span class="span">Popular</span> Brands
+        </h2>
+
+        <ul class="has-scrollbar">
+          <li class="scrollbar-item">
+            <div
+              class="brand-card img-holder"
+              style="--width: 150; --height: 150"
+            >
+              <img
+                src="./images/brand-1.png"
+                width="150"
+                height="150"
+                loading="lazy"
+                alt="brand logo"
+                class="img-cover"
+              />
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div
+              class="brand-card img-holder"
+              style="--width: 150; --height: 150"
+            >
+              <img
+                src="./images/brand-2.png"
+                width="150"
+                height="150"
+                loading="lazy"
+                alt="brand logo"
+                class="img-cover"
+              />
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div
+              class="brand-card img-holder"
+              style="--width: 150; --height: 150"
+            >
+              <img
+                src="./images/brand-3.png"
+                width="150"
+                height="150"
+                loading="lazy"
+                alt="brand logo"
+                class="img-cover"
+              />
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div
+              class="brand-card img-holder"
+              style="--width: 150; --height: 150"
+            >
+              <img
+                src="./images/brand-4.png"
+                width="150"
+                height="150"
+                loading="lazy"
+                alt="brand logo"
+                class="img-cover"
+              />
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div
+              class="brand-card img-holder"
+              style="--width: 150; --height: 150"
+            >
+              <img
+                src="./images/brand-5.png"
+                width="150"
+                height="150"
+                loading="lazy"
+                alt="brand logo"
+                class="img-cover"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer
+      class="footer"
+      style="background-image: url('./images/footer-bg.jpg')"
+    >
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">Fuzz Mart</a>
+
+            <p class="footer-text">
+              If you have any question, please contact us at
+              <a href="mailto:fuzzmart@gmail.com" class="link"
+                >fuzzmart@gmail.com</a
+              >
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <address class="address">Lipa City, Batangas, 4217</address>
+              </li>
+
+              <li class="contact-item">
+                <a href="#" class="contact-link">(+639)-123-4567-890</a>
+              </li>
+            </ul>
+
+            <ul class="social-list">
+              <li>
+                <a href="https://github.com/ndrscnl" class="social-link">
+                  <img
+                    src="https://www.clipartmax.com/png/full/416-4169142_facebook-logo-facebook-white-icon-png-2018.png"
+                    width="20px"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/ndrscnl" class="social-link">
+                  <img
+                    src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png"
+                    width="20px"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/ndrscnl" class="social-link">
+                  <img
+                    src="https://www.freeiconspng.com/uploads/white-pinterest-logo-png--30.png"
+                    width="20px"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/ndrscnl" class="social-link">
+                  <img
+                    src="https://www.kortegaard.co.uk/wp-content/uploads/2020/06/best-solutions-of-instagram-png-transparent-png-images-unique-white-instagram-logo-outline-of-white-instagram-logo-outline-copy.png"
+                    width="20px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Corporate</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Careers</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQs</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Stores</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Affiliate Program</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Information</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Online Store</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Refund Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Shipping Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Service</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Track Order</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Grooming Salon</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Dog Training</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Veterinary Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Insurance</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pet Adoption</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Resource Center</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2023 Maria Andrea L. Escaniel |
+            <a href="#" class="copyright-link">andreaescaniel</a>
+          </p>
+
+          <img
+            src="./images/payment.png"
+            width="210 px"
+            loading="lazy"
+            alt="payment method"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
