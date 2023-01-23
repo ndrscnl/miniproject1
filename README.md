@@ -2,7 +2,7 @@
 
 ## 💻 To Visit the site click the link below
 
-[https://ndrscnl.github.io/miniproject1/]
+https://ndrscnl.github.io/miniproject1/
 
 ## 🙋‍♂️ About The Project
 
